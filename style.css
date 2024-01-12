@@ -122,7 +122,8 @@ body{
 	}
 
 	.tit2{
-		font-size: 9pt;
+		font-size: 10pt;
+		padding-right: 2em;
 	}
 
   .main-nav a{
@@ -138,7 +139,7 @@ body{
 @media only screen and (min-width: 801px) {
 
 	.main-head{
-		display: flex;
+		display: inline-flex;
 	}
 
 	.tit1{
@@ -159,7 +160,7 @@ body{
 	.main-head{
 		display: flex;
 	}
-	
+
 	.tit1{
 		display: flex;
 		font-size: 30pt;
