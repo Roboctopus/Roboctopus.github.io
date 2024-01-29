@@ -141,14 +141,16 @@ body{
 }
 
 .mnav-head {
-	max-width: 200px;
+	display: flex;
+	/* max-width: 200px; */
+	justify-content: center;
 }
 
 .mobile-nav ul{
 	display: flex;
 /*  margin: 0.25;*/
 	list-style: none;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	gap: clamp(0.5rem, 1rem, 3rem);
 	/* padding-left: clamp(10vw, 20vw, 40vw);
 	padding-right: clamp(10vw, 20vw, 40vw); */
@@ -160,7 +162,6 @@ body{
 	font-family: Raleway, sans-serif;
 /*	width: 100%;*/
 	font-size: clamp(12px, 3vw, 17px);
-
 }
 
 .mobile-nav a:hover{
@@ -177,7 +178,7 @@ body{
 	flex-direction: column;
 	/* min-height: 100vh; */
 	justify-content: center;
-	height: 35vh;
+	height: 78vh;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -222,6 +223,54 @@ body{
 	text-align: center;
 }
 
+.Contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    /* justify-content: center; */
+}
+
+.Contact label {
+	float: left;
+	width: 20em;
+	margin-left: 5em;
+	padding-right: 4em;
+	margin-top: 13px;
+}
+
+input[type=text] {
+	list-style: none;
+	width: 18em;
+	padding: 12px 20px;
+	margin: 8px 8px;
+	box-sizing: border-box;
+	border: 1px solid #555;
+	outline: none;
+  }
+
+input[id=fdescript]  {
+	padding: 7vh 20px;
+	}
+
+input[type=submit] {
+	background-color: #0497aa;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	}
+
+input[type=submit]:hover {
+	background-color: #0497aa;
+	}
+
+
+/* input[type=text]:focus {
+	background-color: rgb(223, 223, 223);
+  } */
+
 .Ver {
 	display: flex;
 	bottom: 0%;
@@ -230,6 +279,12 @@ body{
 	font-size: 11pt;
 }
 
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+		}
+}
 
 @media only screen and (min-width: 250px) {
 
@@ -254,6 +309,14 @@ body{
 	.fta-logo img{
 		max-height: 50px;
 	}
+
+	.Contact label {
+		width: 25em;
+	}
+	
+	input[type=text] {
+		width: 25em;
+	  }
 }
 
 
@@ -262,6 +325,14 @@ body{
 	.fta-logo img{
 		max-height: 60px;
 	}
+	
+	.Contact label {
+		width: 27em;
+	}
+	
+	input[type=text] {
+		width: 27em;
+	  }
 }
 
 
@@ -272,6 +343,15 @@ body{
 		.mnav-head{
 		padding-top: 1em;
 	}
+
+	.Contact label {
+		width: 30em;
+	}
+	
+	input[type=text] {
+		width: 30em;
+	  }
+}
 }
 
 @media only screen and (min-width: 780px) {
