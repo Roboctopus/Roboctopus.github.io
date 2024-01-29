@@ -238,6 +238,12 @@ body{
 	margin-top: 13px;
 }
 
+.txtBox {
+	width: 18em;
+	padding: 12px 20px;
+	margin: 8px 8px;
+}
+
 input[type=text] {
 	list-style: none;
 	width: 18em;
@@ -314,6 +320,9 @@ input[type=submit]:hover {
 		width: 25em;
 	}
 	
+	.txtBox {
+		width: 25em;
+	}
 	input[type=text] {
 		width: 25em;
 	  }
@@ -330,6 +339,10 @@ input[type=submit]:hover {
 		width: 27em;
 	}
 	
+	.txtBox {
+		width: 27em;
+	}
+
 	input[type=text] {
 		width: 27em;
 	  }
@@ -348,6 +361,10 @@ input[type=submit]:hover {
 		width: 30em;
 	}
 	
+	.txtBox {
+		width:30em;
+	}
+
 	input[type=text] {
 		width: 30em;
 	  }
